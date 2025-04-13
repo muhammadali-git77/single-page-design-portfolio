@@ -4,11 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template</title>
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+      <div class="header__container container">
+        <a class="site-logo" href="./index.html">
+          <img
+            src="./images/logo.svg"
+            alt=""
+            class="header__image"
+            width="64"
+            height="64"
+          />
+        </a>
+        <a href="#" class="header__btn btn">Free Consultation</a>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <div class="hero_container container">
+          <h1 class="hero__title">Design solutions made easy</h1>
+          <p class="hero__desc">
+            With over ten years of experience in various design disciplines, I’m
+            your one-stop shop for your design needs.
+          </p>
+
+          <div class="hero__card">
+            <div class="div1 card__item">
+              <h3 class="card__item__title">Graphic Design</h3>
+            </div>
+            <div class="div2 card__item">
+              <h3 class="card__item__title">Apps</h3>
+            </div>
+            <div class="div3 card__item">
+              <h3 class="card__item__title">UI/UX</h3>
+            </div>
+            <div class="div4 card__item">
+              <h3 class="card__item__title">Illustrations</h3>
+            </div>
+            <div class="div5 card__item">
+              <h3 class="card__item__title">Photography</h3>
+            </div>
+            <div class="div6 card__item">
+              <h3 class="card__item__title">Motion Graphics</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-me">
+        <div class="about-me__container container">
+          <img
+            src="./images/about-image.png"
+            alt=""
+            class="about-me__image"
+            width="445"
+            height="445"
+          />
+          <div class="about-me__content">
+            <h2 class="about-me__title">
+              I’m Amy, and I’d love to work on your next project
+            </h2>
+            <p class="about-me__desc">
+              I love working with others to create beautiful design solutions.
+              I’ve designed everything from brand illustrations to complete
+              mobile apps. I’m also handy with a camera!
+            </p>
+            <a href="#" class="btn about-me__btn">Free Consultation</a>
+          </div>
+        </div>
+      </section>
+      <section class="work">
+        <div class="work__container">
+          <div>
+            <swiper-container
+              class="mySwiper"
+              pagination="true"
+              pagination-clickable="true"
+              space-between="30"
+              slides-per-view="3"
+            >
+              <swiper-slide
+                ><img
+                  src="./images/Bitmap.png"
+                  alt=""
+                  class="work__image"
+                  width="540"
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  src="./images/Bitmap-1.png"
+                  alt=""
+                  class="work__image"
+                  width="540"
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  src="./images/Bitmap-2.png"
+                  alt=""
+                  class="work__image"
+                  width="540"
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  src="./images/Bitmap-3.png"
+                  alt=""
+                  class="work__image"
+                  width="540"
+              /></swiper-slide>
+              <swiper-slide
+                ><img
+                  src="./images/Bitmap-4.png"
+                  alt=""
+                  class="work__image"
+                  width="540"
+              /></swiper-slide>
+            </swiper-container>
+          </div>
+          <div class="work__btns">
+            <button id="prevBtn" class="work__button--prev work__button">
+              <img src="./images/prev.svg" alt="" width="15" height="16" />
+            </button>
+            <button id="nextBtn" class="work__button--next work__button">
+              <img src="./images/next.svg" alt="" width="15" height="16" />
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__cta container">
+        <div class="cta__content">
+          <h2 class="cta__title">Book a call with me</h2>
+          <p class="cta__desc">
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+        <a href="#" class="about-me__btn btn">Free Consultation</a>
+      </div>
+      <div class="footer__container container">
+        <a class="site-logo" href="./index.html">
+          <img
+            src="./images/logo.svg"
+            alt=""
+            class="footer__image"
+            width="64"
+            height="64"
+          />
+        </a>
+        <a href="#" class="footer__btn btn">Free Consultation</a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="./scripts/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,21 @@
+.header {
+  padding-top: 3.4rem;
+  padding-bottom: 3.4rem;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.site-logo {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.header__btn {
+  background-color: #030303;
+
+  &:hover {
+    background-color: #755cde;
+  }
+}
